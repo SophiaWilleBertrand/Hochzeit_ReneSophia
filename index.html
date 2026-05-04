@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5ede1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Sophia &amp; Rene">
+
+<!-- Favicon: Zwei verschlungene Eheringe in Hochzeitsfarben -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5ede1' rx='8'/%3E%3Ccircle cx='25' cy='34' r='13' fill='none' stroke='%23a88159' stroke-width='3.5'/%3E%3Ccircle cx='40' cy='34' r='13' fill='none' stroke='%23b8654a' stroke-width='3.5'/%3E%3Ccircle cx='25' cy='21' r='1.5' fill='%23a88159'/%3E%3Ccircle cx='40' cy='21' r='1.5' fill='%23b8654a'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' fill='%23f5ede1'/%3E%3Ccircle cx='72' cy='100' r='38' fill='none' stroke='%23a88159' stroke-width='10'/%3E%3Ccircle cx='112' cy='100' r='38' fill='none' stroke='%23b8654a' stroke-width='10'/%3E%3Ccircle cx='72' cy='62' r='4' fill='%23a88159'/%3E%3Ccircle cx='112' cy='62' r='4' fill='%23b8654a'/%3E%3C/svg%3E">
+<link rel="manifest" href='data:application/manifest+json,{"name":"Sophia %26 Rene","short_name":"S %26 R","start_url":".","display":"standalone","background_color":"%23f5ede1","theme_color":"%23b8654a","icons":[{"src":"data:image/svg+xml,%253Csvg xmlns%3D%2522http%3A//www.w3.org/2000/svg%2522 viewBox%3D%25220 0 192 192%2522%253E%253Crect width%3D%2522192%2522 height%3D%2522192%2522 fill%3D%2522%2523f5ede1%2522/%253E%253Ctext x%3D%252250%2525%2522 y%3D%252255%2525%2522 font-family%3D%2522serif%2522 font-size%3D%2522130%2522 fill%3D%2522%2523b8654a%2522 text-anchor%3D%2522middle%2522 dominant-baseline%3D%2522middle%2522%253E%E2%99%A1%253C/text%253E%253C/svg%253E","sizes":"192x192","type":"image/svg+xml"}]}'>
+<title>Sophia &amp; Rene — Unsere Hochzeit</title>
+
+<!-- 
+  ═══════════════════════════════════════════════════════════════
+  HOCHZEITS-BLAUPAUSE
+  ═══════════════════════════════════════════════════════════════
+  Alle Platzhalter sind in [ECKIGEN KLAMMERN] markiert.
+  Suche im Editor mit Strg+F nach "[" um sie nacheinander 
+  durchzugehen und durch eure Inhalte zu ersetzen.
+  ═══════════════════════════════════════════════════════════════
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Italiana&family=Cormorant+Infant:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --cream: #f5ede1;
+    --cream-deep: #ebe0cd;
+    --terracotta: #b8654a;
+    --terracotta-deep: #8a4530;
+    --sage: #7a8268;
+    --rose: #c89890;
+    --ink: #3a2e26;
+    --ink-soft: #5c4a3e;
+    --gold: #a88159;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Cormorant Garamond', serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 19px;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(ellipse at 50% 100vh, rgba(200, 152, 144, 0.08), transparent 60%),
+      radial-gradient(ellipse at 50% 200vh, rgba(122, 130, 104, 0.08), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  /* Subtle grain texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    z-index: 1;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  }
+
+  /* ═══════════ HERO ═══════════ */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Italiana', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.5em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeUp 1.2s 0.3s forwards;
+  }
+
+  .hero-eyebrow::before,
+  .hero-eyebrow::after {
+    content: '◈';
+    margin: 0 1.5rem;
+    font-size: 0.6rem;
+    color: var(--gold);
+  }
+
+  .hero-names {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: fadeUp 1.4s 0.6s forwards;
+  }
+
+  .hero-amp {
+    font-family: 'Cormorant Infant', serif;
+    font-style: italic;
+    color: var(--terracotta);
+    font-weight: 300;
+    display: inline-block;
+    transform: translateY(0.1em);
+    margin: 0 0.3rem;
+  }
+
+  .hero-tagline {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--ink-soft);
+    margin: 2rem 0 3rem;
+    max-width: 32rem;
+    opacity: 0;
+    animation: fadeUp 1.4s 0.9s forwards;
+  }
+
+  .hero-date {
+    font-family: 'Italiana', serif;
+    letter-spacing: 0.3em;
+    font-size: 1.1rem;
+    color: var(--ink);
+    padding: 1rem 2.5rem;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+    opacity: 0;
+    animation: fadeUp 1.4s 1.2s forwards;
+  }
+
+  .hero-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-family: 'Italiana', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeUp 1.4s 1.8s forwards;
+  }
+
+  .hero-subtitle-divider {
+    color: var(--gold);
+    font-size: 1.2rem;
+    line-height: 0;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Italiana', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 1s 2.2s forwards, bob 2s 3.2s infinite;
+  }
+
+  /* Decorative ornament */
+  .ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 1rem;
+    color: var(--gold);
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+  }
+
+  .ornament::before,
+  .ornament::after {
+    content: '';
+    height: 1px;
+    width: 4rem;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 0 1.5rem;
+  }
+
+  /* ═══════════ NAV ═══════════ */
+  nav {
+    position: sticky;
+    top: 0;
+    background: rgba(245, 237, 225, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 10;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(168, 129, 89, 0.2);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  nav a {
+    font-family: 'Italiana', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    color: var(--ink);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: var(--terracotta);
+    transition: all 0.4s;
+    transform: translateX(-50%);
+  }
+
+  nav a:hover {
+    color: var(--terracotta);
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  /* ═══════════ SECTIONS ═══════════ */
+section {
+    padding: 0rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Konsistenter Abstand zwischen Sections */
+section + section,
+section.reveal {
+    padding-top: 1.5rem;
+}
+
+#ablauf {
+    padding-top: 2rem;
+}
+
+  .section-label {
+    font-family: 'Italiana', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.5em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .section-title em {
+    font-family: 'Cormorant Infant', serif;
+    color: var(--terracotta);
+    font-weight: 300;
+  }
+
+  /* ═══════════ ABLAUF ═══════════ */
+  .ablauf-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .ablauf-card {
+    flex: 1;
+    min-width: 240px;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(168, 129, 89, 0.3);
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+
+  .ablauf-card::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 1px solid rgba(168, 129, 89, 0.2);
+    pointer-events: none;
+  }
+
+  .ablauf-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(58, 46, 38, 0.08);
+  }
+
+  .ablauf-time {
+    font-family: 'Italiana', serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.3em;
+    color: var(--terracotta-deep);
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  .ablauf-divider {
+    color: var(--gold);
+    font-size: 0.7rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5em;
+  }
+
+  .ablauf-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+  }
+
+  .ablauf-card p {
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 1.05rem;
+  }
+
+  .ablauf-arrow {
+    font-family: 'Cormorant Infant', serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: var(--terracotta);
+    flex-shrink: 0;
+  }
+
+  .ablauf-note {
+    max-width: 650px;
+    margin: 3rem auto 0;
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    border-left: 2px solid var(--terracotta);
+    text-align: left;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  .ablauf-note strong {
+    font-style: normal;
+    color: var(--terracotta-deep);
+    font-weight: 500;
+  }
+
+  /* ═══════════ INFO-BEREICH (Mitbringen, Fotos) ═══════════ */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .info-grid-single {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+
+  .info-block {
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(168, 129, 89, 0.3);
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .info-block::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 1px solid rgba(168, 129, 89, 0.2);
+    pointer-events: none;
+  }
+
+  .info-block-icon {
+    font-size: 2rem;
+    color: var(--terracotta);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .info-block h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--terracotta-deep);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .info-block p {
+    color: var(--ink-soft);
+    font-style: italic;
+    line-height: 1.75;
+  }
+
+  .info-block strong {
+    font-style: normal;
+    color: var(--terracotta-deep);
+    font-weight: 500;
+  }
+
+  /* ═══════════ R.S.V.P. ═══════════ */
+  .rsvp {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(168, 129, 89, 0.3);
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .rsvp::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 1px solid rgba(168, 129, 89, 0.2);
+    pointer-events: none;
+  }
+
+  .rsvp p.rsvp-intro {
+    text-align: center;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .rsvp-field {
+    margin-bottom: 1.2rem;
+  }
+
+  .rsvp-field label {
+    display: block;
+    font-family: 'Italiana', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .rsvp-field input,
+  .rsvp-field textarea,
+  .rsvp-field select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(168, 129, 89, 0.4);
+    border-radius: 3px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ink);
+    transition: all 0.3s;
+  }
+
+  .rsvp-field input::placeholder,
+  .rsvp-field textarea::placeholder {
+    color: rgba(92, 74, 62, 0.55);
+    font-weight: 400;
+  }
+
+  .rsvp-field input:focus,
+  .rsvp-field textarea:focus,
+  .rsvp-field select:focus {
+    outline: none;
+    border-color: var(--terracotta);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 0 3px rgba(184, 101, 74, 0.1);
+  }
+
+  .rsvp-field textarea {
+    resize: vertical;
+    min-height: 80px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .rsvp-radio-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .rsvp-radio {
+    flex: 1;
+    min-width: 140px;
+    position: relative;
+  }
+
+  .rsvp-radio input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .rsvp-radio label {
+    display: block;
+    padding: 0.95rem 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(168, 129, 89, 0.4);
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .rsvp-radio input:checked + label {
+    background: var(--terracotta);
+    color: var(--cream);
+    border-color: var(--terracotta);
+    font-weight: 600;
+  }
+
+  .rsvp-button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: var(--terracotta);
+    color: var(--cream);
+    border: none;
+    border-radius: 3px;
+    font-family: 'Italiana', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .rsvp-button:hover {
+    background: var(--terracotta-deep);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(184, 101, 74, 0.3);
+  }
+
+  .rsvp-success {
+    text-align: center;
+    padding: 2rem;
+    color: var(--terracotta-deep);
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  /* ═══════════ LIEBES-TIMELINE ═══════════ */
+  .story-timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem 0;
+  }
+
+  .story-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--gold) 10%, var(--gold) 90%, transparent);
+    transform: translateX(-50%);
+  }
+
+  .story-item {
+    position: relative;
+    width: 50%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+  }
+
+  .story-item:nth-child(odd) {
+    margin-left: 0;
+    text-align: right;
+    padding-right: 3rem;
+  }
+
+  .story-item:nth-child(even) {
+    margin-left: 50%;
+    text-align: left;
+    padding-left: 3rem;
+  }
+
+  .story-dot {
+    position: absolute;
+    top: 2rem;
+    width: 16px;
+    height: 16px;
+    background: var(--cream);
+    border: 2px solid var(--terracotta);
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+
+  .story-item:nth-child(odd) .story-dot {
+    right: -8px;
+  }
+
+  .story-item:nth-child(even) .story-dot {
+    left: -8px;
+  }
+
+  .story-item:hover .story-dot {
+    background: var(--terracotta);
+    transform: scale(1.3);
+    box-shadow: 0 0 0 6px rgba(184, 101, 74, 0.15);
+  }
+
+  .story-date {
+    font-family: 'Italiana', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .story-item h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+  }
+
+  .story-item p {
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* ═══════════ VIGNETTE ═══════════ */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 50%,
+      rgba(58, 46, 38, 0.15) 90%,
+      rgba(58, 46, 38, 0.35) 100%
+    );
+  }
+
+  body.evening::after {
+    background: radial-gradient(
+      ellipse at center,
+      transparent 50%,
+      rgba(0, 0, 0, 0.25) 90%,
+      rgba(0, 0, 0, 0.55) 100%
+    );
+  }
+
+  /* ═══════════ PARALLAX HERO ═══════════ */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 80% 60% at 30% 20%, rgba(200, 152, 144, 0.18), transparent 70%),
+      radial-gradient(ellipse 70% 50% at 80% 80%, rgba(168, 129, 89, 0.15), transparent 70%),
+      var(--cream);
+  }
+
+  .hero-bg-layer {
+    position: absolute;
+    inset: -20%;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse at top left, rgba(200, 152, 144, 0.2), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(168, 129, 89, 0.18), transparent 60%);
+    will-change: transform;
+  }
+
+  .hero > *:not(.hero-bg-layer) {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ═══════════ ANIMIERTE LINIEN-ORNAMENTE ═══════════ */
+  .ornament::before,
+  .ornament::after {
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ornament.drawn::before,
+  .ornament.drawn::after {
+    transform: scaleX(1);
+  }
+
+  .ornament > * {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.6s 0.8s, transform 0.6s 0.8s;
+  }
+
+  .ornament.drawn > * {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* ═══════════ VERSTECKTE LIEBESBRIEFE ═══════════ */
+  .hidden-heart {
+    position: absolute;
+    color: var(--terracotta);
+    opacity: 0.9;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: opacity 0.4s, transform 0.3s, color 0.3s;
+    z-index: 5;
+    user-select: none;
+    animation: heartPulse 3.5s ease-in-out infinite;
+    text-shadow: 0 0 14px rgba(184, 101, 74, 0.5);
+  }
+
+  @keyframes heartPulse {
+    0%, 100% { opacity: 0.85; transform: scale(1); }
+    50%      { opacity: 1; transform: scale(1.15); }
+  }
+
+  .hidden-heart:hover {
+    transform: scale(1.6) rotate(15deg);
+    opacity: 1 !important;
+    color: var(--terracotta);
+    animation: none;
+  }
+
+  .hidden-heart.revealed {
+    opacity: 0.2;
+    animation: none;
+    color: var(--gold);
+  }
+
+  .love-note-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(58, 46, 38, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 2rem;
+  }
+
+  .love-note-modal.open {
+    display: flex;
+    animation: fadeIn 0.4s forwards;
+  }
+
+  .love-note {
+    background: var(--cream);
+    border: 1px solid var(--gold);
+    padding: 3rem 2.5rem;
+    max-width: 450px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+    animation: noteAppear 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  @keyframes noteAppear {
+    from { transform: scale(0.7) rotate(-3deg); opacity: 0; }
+    to { transform: scale(1) rotate(0); opacity: 1; }
+  }
+
+  .love-note-icon {
+    font-size: 2.5rem;
+    color: var(--terracotta);
+    margin-bottom: 1rem;
+  }
+
+  .love-note h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: var(--terracotta-deep);
+    margin-bottom: 1.2rem;
+  }
+
+  .love-note p {
+    color: var(--ink);
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .love-note-close {
+    background: none;
+    border: 1px solid var(--terracotta);
+    color: var(--terracotta);
+    padding: 0.6rem 1.5rem;
+    font-family: 'Italiana', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 3px;
+  }
+
+  .love-note-close:hover {
+    background: var(--terracotta);
+    color: var(--cream);
+  }
+
+  /* ═══════════ KALENDER-BUTTON ═══════════ */
+  .save-date-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.8rem;
+    background: transparent;
+    color: var(--terracotta);
+    border: 1px solid var(--terracotta);
+    border-radius: 3px;
+    font-family: 'Italiana', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeUp 1.4s 1.5s forwards;
+  }
+
+  .save-date-button:hover {
+    background: var(--terracotta);
+    color: var(--cream);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(184, 101, 74, 0.25);
+  }
+
+  /* ═══════════ WETTER-WIDGET ═══════════ */
+  .weather-widget {
+    max-width: 500px;
+    margin: 2rem auto 0;
+    padding: 1.8rem 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(168, 129, 89, 0.3);
+    border-radius: 4px;
+    text-align: center;
+    display: none;
+  }
+
+  .weather-widget.visible {
+    display: block;
+    animation: fadeUp 0.8s forwards;
+  }
+
+  .weather-label {
+    font-family: 'Italiana', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .weather-icon {
+    font-size: 3rem;
+  }
+
+  .weather-temp {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: var(--ink);
+    font-weight: 300;
+  }
+
+  .weather-desc {
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  /* ═══════════ GÄSTEBUCH ═══════════ */
+  .guestbook-list {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .guestbook-entry {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(168, 129, 89, 0.25);
+    border-left: 3px solid var(--terracotta);
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    opacity: 0;
+    animation: fadeUp 0.6s forwards;
+  }
+
+  .guestbook-entry-author {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    color: var(--terracotta-deep);
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .guestbook-entry-text {
+    color: var(--ink-soft);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  .guestbook-entry-date {
+    font-family: 'Italiana', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 0.7rem;
+  }
+
+  .guestbook-loading,
+  .guestbook-empty {
+    text-align: center;
+    color: var(--ink-soft);
+    font-style: italic;
+    padding: 2rem;
+  }
+
+  .guestbook-cta {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  /* ═══════════ LOCATION ═══════════ */
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+  }
+
+  .location-card {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(168, 129, 89, 0.3);
+    padding: 3rem;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-card .card-note {
+    margin-top: auto;
+  }
+
+  .location-card::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 1px solid rgba(168, 129, 89, 0.2);
+    pointer-events: none;
+  }
+
+  .location-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--terracotta-deep);
+    margin-bottom: 1rem;
+  }
+
+  .location-card-label {
+    font-family: 'Italiana', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  .location-card .address {
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .location-card .info-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .location-card .info-label {
+    font-family: 'Italiana', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    min-width: 80px;
+  }
+
+  .location-illustration {
+    text-align: center;
+    color: var(--gold);
+    opacity: 0.6;
+  }
+
+  .location-illustration svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .parking-list {
+    margin-top: 1.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px dashed rgba(168, 129, 89, 0.3);
+  }
+
+  .parking-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .parking-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .parking-name {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .parking-meta {
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
+  .parking-meta strong {
+    font-style: normal;
+    color: var(--terracotta-deep);
+    font-weight: 500;
+  }
+
+  .parking-tip {
+    background: rgba(184, 101, 74, 0.06);
+    border-left: 2px solid var(--terracotta);
+    padding: 0.9rem 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .parking-tip-label {
+    font-family: 'Italiana', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+
+  .parking-tip .parking-name {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .parking-tip .parking-meta {
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .card-note {
+    margin-top: 1.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px dashed rgba(168, 129, 89, 0.3);
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* ═══════════ DRESSCODE ═══════════ */
+  .dresscode {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .dresscode-name {
+    font-family: 'Cormorant Infant', serif;
+    font-style: italic;
+    font-size: 3rem;
+    color: var(--terracotta);
+    margin-bottom: 1rem;
+  }
+
+  .dresscode-desc {
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    margin-bottom: 3rem;
+    font-style: italic;
+  }
+
+  .dresscode-tips {
+    background: rgba(255, 255, 255, 0.4);
+    border-left: 2px solid var(--terracotta);
+    padding: 1.5rem 2rem;
+    text-align: left;
+    margin-top: 2.5rem;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  /* ═══════════ KONTAKT ═══════════ */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(168, 129, 89, 0.25);
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+
+  .contact-card:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(58, 46, 38, 0.08);
+  }
+
+  .contact-role {
+    font-family: 'Italiana', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  .contact-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    color: var(--ink);
+  }
+
+  .contact-info {
+    color: var(--ink-soft);
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .contact-info a {
+    color: var(--terracotta-deep);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--terracotta);
+    transition: color 0.3s;
+  }
+
+  .contact-info a:hover {
+    color: var(--terracotta);
+  }
+
+  /* ═══════════ FOOTER ═══════════ */
+  footer {
+    text-align: center;
+    padding: 5rem 2rem 3rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+  }
+
+  footer .heart {
+    color: var(--terracotta);
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+  }
+
+  /* ═══════════ GLITZER & SCHIMMER ═══════════ */
+  .sparkle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #f4d59e 0%, #e0a96d 40%, transparent 70%);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(244, 213, 158, 0.8);
+    animation: sparkle-fade 1.2s ease-out forwards;
+  }
+
+  @keyframes sparkle-fade {
+    0% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.2) translateY(20px) rotate(180deg);
+    }
+  }
+
+  /* Eintritts-Konfetti */
+  .entry-sparkle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    font-size: 1rem;
+    animation: entry-fall linear forwards;
+  }
+
+  @keyframes entry-fall {
+    0% {
+      opacity: 0;
+      transform: translateY(-20vh) rotate(0deg) scale(0.5);
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(110vh) rotate(720deg) scale(1);
+    }
+  }
+
+  /* Pulsierende Trennzeichen */
+  .ornament,
+  .ablauf-divider {
+    animation: gentle-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes gentle-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  /* Hero-Sterne im Hintergrund */
+  .hero-stars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .hero-star {
+    position: absolute;
+    color: var(--gold);
+    font-size: 0.6rem;
+    opacity: 0;
+    animation: twinkle 4s ease-in-out infinite;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 0.7; transform: scale(1); }
+  }
+
+  /* Hover-Glow auf den Karten */
+  .location-card:hover,
+  .ablauf-card:hover,
+  .contact-card:hover {
+    box-shadow: 0 12px 40px rgba(184, 101, 74, 0.15), 0 0 60px rgba(244, 213, 158, 0.2);
+  }
+
+  /* Versteckte Liebes-Notiz unter dem Datum */
+  .hero-date {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .hero-date:hover {
+    color: var(--terracotta);
+    border-color: var(--terracotta);
+    transform: scale(1.02);
+  }
+
+  /* ═══════════ COUNTDOWN ═══════════ */
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2.5rem 0 0;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 1.4s 1.5s forwards;
+  }
+
+  .countdown-unit {
+    text-align: center;
+    min-width: 70px;
+    padding: 1rem 0.8rem;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(168, 129, 89, 0.25);
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+    transition: transform 0.4s ease;
+  }
+
+  .countdown-unit:hover {
+    transform: translateY(-3px);
+  }
+
+  .countdown-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--terracotta-deep);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+    transition: all 0.3s;
+  }
+
+  .countdown-label {
+    font-family: 'Italiana', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+
+  .countdown-message {
+    font-family: 'Cormorant Infant', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--terracotta);
+    margin: 2rem 0 0;
+    opacity: 0;
+    animation: fadeUp 1s 0.5s forwards;
+  }
+
+  /* ═══════════ FLOATING PETALS ═══════════ */
+  .petal {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    color: var(--rose);
+    font-size: 1rem;
+    animation: petal-float linear infinite;
+  }
+
+  @keyframes petal-float {
+    0% {
+      opacity: 0;
+      transform: translateY(-10vh) translateX(0) rotate(0deg);
+    }
+    10% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(110vh) translateX(50px) rotate(360deg);
+    }
+  }
+
+  /* ═══════════ MUSIK-TOGGLE ═══════════ */
+  .music-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(245, 237, 225, 0.9);
+    border: 1px solid var(--gold);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--terracotta);
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(58, 46, 38, 0.1);
+  }
+
+  .music-toggle:hover {
+    background: var(--terracotta);
+    color: var(--cream);
+    transform: scale(1.1);
+  }
+
+  .music-toggle.playing {
+    animation: gentle-pulse 2s ease-in-out infinite;
+  }
+
+  /* ═══════════ DARK MODE ═══════════ */
+  body.evening {
+    --cream: #2a2018;
+    --cream-deep: #3a2c20;
+    --ink: #f5ede1;
+    --ink-soft: #d4c4b0;
+    --terracotta: #d88566;
+    --terracotta-deep: #e09b7d;
+    --rose: #d8a89d;
+    --gold: #c9a274;
+    --sage: #9aa388;
+  }
+
+  body.evening .location-card,
+  body.evening .ablauf-card,
+  body.evening .contact-card,
+  body.evening .countdown-unit {
+    background: rgba(255, 245, 225, 0.04);
+  }
+
+  body.evening nav {
+    background: rgba(42, 32, 24, 0.92);
+  }
+
+  .mode-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 5.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(245, 237, 225, 0.9);
+    border: 1px solid var(--gold);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--terracotta);
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(58, 46, 38, 0.1);
+    font-size: 1.2rem;
+  }
+
+  .mode-toggle:hover {
+    background: var(--terracotta);
+    color: var(--cream);
+    transform: scale(1.1) rotate(20deg);
+  }
+
+  /* ═══════════ ANIMATIONS ═══════════ */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.7; }
+  }
+
+  @keyframes bob {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -8px); }
+  }
+
+  /* Reveal on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ═══════════ RESPONSIVE ═══════════ */
+  @media (max-width: 768px) {
+    body { font-size: 18px; line-height: 1.65; }
+    section { padding: 0 1.2rem; }
+    nav ul { gap: 1rem; }
+    nav a { font-size: 0.6rem; letter-spacing: 0.15em; }
+
+    /* Hero auf Mobile entzerren */
+    .hero { padding: 3rem 1.5rem 5rem; min-height: auto; }
+    .hero-eyebrow { margin-bottom: 2rem; font-size: 0.7rem; letter-spacing: 0.3em; }
+    .hero-eyebrow::before, .hero-eyebrow::after { margin: 0 0.6rem; }
+    .hero-tagline { font-size: 1.1rem; margin: 1.5rem 0 2rem; }
+    .hero-date { font-size: 0.95rem; padding: 0.8rem 1.5rem; }
+
+    /* "Mehr erfahren" Pfeil – auf Mobile in normalen Fluss bringen */
+    .hero-scroll {
+      position: static;
+      transform: none;
+      margin-top: 2.5rem;
+      display: block;
+      animation: fadeIn 1s 2.2s forwards;
+      text-align: center;
+    }
+
+    /* Layout-Grids einspaltig */
+    .location-grid { grid-template-columns: 1fr; }
+    .ablauf-grid { flex-direction: column; gap: 1rem; }
+    .ablauf-card {
+      width: 100%;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+    }
+    .ablauf-arrow { transform: rotate(90deg); font-size: 2rem; }
+    .info-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+
+    /* Story Timeline */
+    .story-timeline::before { left: 12px; }
+    .story-item { width: 100%; padding: 1rem 1rem 1rem 2.5rem; }
+    .story-item:nth-child(odd),
+    .story-item:nth-child(even) {
+      margin-left: 0;
+      text-align: left;
+      padding-left: 2.5rem;
+      padding-right: 1rem;
+    }
+    .story-item:nth-child(odd) .story-dot,
+    .story-item:nth-child(even) .story-dot {
+      left: 4px;
+      right: auto;
+    }
+
+    /* RSVP – kräftigere Schrift + bessere Lesbarkeit */
+    .rsvp { padding: 2rem 1.2rem; }
+    .rsvp-intro { font-size: 1.05rem; line-height: 1.6; font-weight: 500; }
+    .rsvp-field label {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      font-weight: 600;
+    }
+    .rsvp-field input,
+    .rsvp-field textarea,
+    .rsvp-field select {
+      font-size: 1.05rem;
+      font-weight: 500;
+      padding: 0.95rem 1rem;
+    }
+    .rsvp-radio label {
+      font-size: 1.05rem;
+      font-weight: 500;
+      padding: 1rem;
+    }
+    .rsvp-button {
+      font-size: 0.9rem;
+      letter-spacing: 0.25em;
+      padding: 1.1rem 2rem;
+      font-weight: 600;
+    }
+
+    /* Section-Titel mobil etwas kleiner */
+    .section-title { font-size: clamp(2rem, 8vw, 2.8rem); }
+    .section-label { font-size: 0.7rem; letter-spacing: 0.3em; }
+
+    /* Countdown */
+    .countdown { gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
+    .countdown-unit { min-width: 65px; padding: 0.7rem 0.4rem; }
+    .countdown-number { font-size: 1.5rem; }
+    .countdown-label { font-size: 0.6rem; }
+
+    /* Schwebebuttons */
+    .music-toggle, .mode-toggle {
+      width: 42px;
+      height: 42px;
+      bottom: 1rem;
+    }
+    .music-toggle { right: 1rem; }
+    .mode-toggle { right: 4rem; }
+
+    /* Ornamente schmaler */
+    .ornament { margin: 1.5rem auto; }
+    .ornament::before, .ornament::after {
+      width: 2.5rem;
+      margin: 0 0.8rem;
+    }
+
+    /* Liebesbriefe mobil etwas kleiner */
+    .hidden-heart { font-size: 1.6rem; }
+
+    /* Wetter-Widget mobil */
+    .weather-widget { padding: 1rem 1.5rem; }
+
+    /* Maps-Links untereinander statt nebeneinander */
+    .maps-links a { display: block; }
+    .maps-links .maps-sep { display: none; }
+  }
+
+  @media (max-width: 480px) {
+    nav ul { gap: 0.7rem; }
+    nav a { font-size: 0.55rem; letter-spacing: 0.1em; }
+    .countdown-unit { min-width: 55px; }
+    .countdown-number { font-size: 1.3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav>
+  <ul>
+    <li><a href="#ablauf">Ablauf</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#dresscode">Dresscode</a></li>
+    <li><a href="#wichtiges">Hinweise</a></li>
+    <li><a href="#rsvp">Rückmeldung</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero">
+  <div class="hero-bg-layer" id="heroBg"></div>
+  <div class="hero-stars">
+    <span class="hero-star" style="top: 15%; left: 10%; animation-delay: 0s;">✦</span>
+    <span class="hero-star" style="top: 25%; left: 85%; animation-delay: 0.8s;">✦</span>
+    <span class="hero-star" style="top: 70%; left: 15%; animation-delay: 1.6s;">✧</span>
+    <span class="hero-star" style="top: 80%; left: 88%; animation-delay: 2.4s;">✦</span>
+    <span class="hero-star" style="top: 40%; left: 5%; animation-delay: 3.2s;">✧</span>
+    <span class="hero-star" style="top: 55%; left: 92%; animation-delay: 1.2s;">✦</span>
+    <span class="hero-star" style="top: 10%; left: 50%; animation-delay: 2.8s;">✧</span>
+    <span class="hero-star" style="top: 90%; left: 45%; animation-delay: 0.4s;">✦</span>
+  </div>
+
+  <!-- Versteckte Liebesbriefe (Easter Eggs) -->
+  <span class="hidden-heart" data-note="1" style="top: 22%; left: 6%;">♡</span>
+  <div class="hero-eyebrow">Wir sagen Ja</div>
+  <h1 class="hero-names">
+    Sophia<br>
+    <span class="hero-amp">&amp;</span><br>
+    Rene
+  </h1>
+  <p class="hero-tagline">
+    Wir freuen uns, diesen besonderen Tag im kleinen Kreis ganz entspannt mit euch zu feiern.
+  </p>
+  <div class="hero-date">18. Mai 2026</div>
+
+  <!-- Countdown — Datum unten im Script anpassen! -->
+  <div class="countdown" id="countdown">
+    <div class="countdown-unit">
+      <div class="countdown-number" id="cd-days">--</div>
+      <div class="countdown-label">Tage</div>
+    </div>
+    <div class="countdown-unit">
+      <div class="countdown-number" id="cd-hours">--</div>
+      <div class="countdown-label">Stunden</div>
+    </div>
+    <div class="countdown-unit">
+      <div class="countdown-number" id="cd-minutes">--</div>
+      <div class="countdown-label">Minuten</div>
+    </div>
+    <div class="countdown-unit">
+      <div class="countdown-number" id="cd-seconds">--</div>
+      <div class="countdown-label">Sekunden</div>
+    </div>
+  </div>
+
+  <button class="save-date-button" id="saveDateBtn">
+    <span>📅</span>
+    <span>In Kalender speichern</span>
+  </button>
+
+  <div class="weather-widget" id="weatherWidget">
+    <div class="weather-label">Wetter am Hochzeitstag</div>
+    <div class="weather-main">
+      <div class="weather-icon" id="weatherIcon">☀️</div>
+      <div class="weather-temp" id="weatherTemp">--°</div>
+    </div>
+    <div class="weather-desc" id="weatherDesc">Lade Vorhersage...</div>
+  </div>
+
+  <div class="hero-scroll" style="display: none;">↓ Mehr erfahren</div>
+</section>
+
+<!-- Liebesbrief-Modal -->
+<div class="love-note-modal" id="loveNoteModal">
+  <div class="love-note">
+    <div class="love-note-icon">♡</div>
+    <h3 id="loveNoteTitle">Eine kleine Notiz</h3>
+    <p id="loveNoteText">Du hast einen kleinen Liebesbrief gefunden.</p>
+    <button class="love-note-close" onclick="document.getElementById('loveNoteModal').classList.remove('open')">Schließen</button>
+  </div>
+</div>
+
+<!-- Schwebebuttons unten rechts -->
+<button class="mode-toggle" id="modeToggle" title="Tag- / Abendmodus">☀</button>
+<button class="music-toggle" id="musicToggle" title="Musik an/aus">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M9 18V5l12-2v13"/>
+    <circle cx="6" cy="18" r="3"/>
+    <circle cx="18" cy="16" r="3"/>
+  </svg>
+</button>
+
+<!-- ═══════════════════ ABLAUF ═══════════════════ -->
+<section id="ablauf" class="reveal">
+  <span class="hidden-heart" data-note="3" style="top: 8%; right: 4%;">♡</span>
+  <div class="section-label">Der Tag</div>
+  <h2 class="section-title">Unser <em>Ablauf</em></h2>
+
+  <div class="ablauf-grid">
+    <div class="ablauf-card">
+      <div class="ablauf-time">14:30</div>
+      <div class="ablauf-divider">◈</div>
+      <h3>Trauung</h3>
+      <p>Standesamt Mannheim</p>
+    </div>
+
+    <div class="ablauf-arrow">→</div>
+
+    <div class="ablauf-card">
+      <div class="ablauf-time">danach</div>
+      <div class="ablauf-divider">◈</div>
+      <h3>Grillen &amp; Anstoßen</h3>
+      <p>im Garten in Hemsbach</p>
+    </div>
+  </div>
+
+  <div class="ablauf-note">
+    <strong>Bitte beachten:</strong> Kommt gerne schon ab <strong>14:15 Uhr</strong> vor Ort, damit es keine Verspätungen gibt — gerade die Parkplatzsuche in Mannheim kann etwas dauern.
+  </div>
+
+  <div class="ornament">◈ ◈ ◈</div>
+</section>
+
+<!-- ═══════════════════ LOCATION ═══════════════════ -->
+<section id="location" class="reveal">
+  <span class="hidden-heart" data-note="4" style="bottom: 10%; left: 3%;">♡</span>
+  <div class="section-label">Wo wir feiern</div>
+  <h2 class="section-title">Die <em>Location</em></h2>
+
+  <div class="location-grid">
+    <div class="location-card">
+      <div class="location-card-label">Trauung · 14:30</div>
+      <h3>Standesamt Mannheim</h3>
+      <p class="address">
+        K7, 2<br>
+        68159 Mannheim
+      </p>
+
+      <div class="info-row">
+        <span class="info-label">Parken</span>
+        <span>Parkhäuser in der Nähe (siehe unten)</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Maps</span>
+        <span class="maps-links">
+          <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4797cc3aa26462cb:0x517843cf3234a91e" target="_blank" rel="noopener">Google Maps ↗</a>
+          <span class="maps-sep">&nbsp;·&nbsp;</span>
+          <a href="https://maps.apple.com/?q=Standesamt+Mannheim&address=K7+2,+68159+Mannheim" target="_blank" rel="noopener">Apple Karten ↗</a>
+        </span>
+      </div>
+
+      <div class="parking-list">
+        <div class="parking-item">
+          <span class="parking-name">Straßenparkplätze direkt im K7</span>
+          <span class="parking-meta">Beim Bürgerservice und in den umliegenden Straßen gibt es einige Stellplätze (achtet darauf, ob ein Parkscheinautomat aufgestellt ist). Nur <strong>kurzer Fußweg</strong> — wenn frei, der bequemste Spot. Aber Zeit für die Suche einplanen.</span>
+        </div>
+        <div class="parking-item">
+          <span class="parking-name">Tiefgarage H6</span>
+          <span class="parking-meta">H6 (Swanseaplatz)· Höhe <strong>1,90&nbsp;m</strong> · ca. <strong>5 Min Fußweg</strong></span>
+        </div>
+        <div class="parking-item">
+          <span class="parking-name">Parkhaus K1</span>
+          <span class="parking-meta">K1 8 · Höhe <strong>2,00&nbsp;m</strong> · ca. <strong>7 Min Fußweg</strong></span>
+        </div>
+        <div class="parking-item">
+          <span class="parking-name">Tiefgarage U2</span>
+          <span class="parking-meta">U2 (Herschelplatz) · Höhe <strong>2,00&nbsp;m</strong> · ca. <strong>12 Min Fußweg</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="location-card">
+      <div class="location-card-label">Im Anschluss</div>
+      <h3>Grillen &amp; Anstoßen</h3>
+      <p class="address">
+        Silcherweg 15<br>
+        69502 Hemsbach
+      </p>
+
+      <div class="info-row">
+        <span class="info-label">Parken</span>
+        <span>Entspannt direkt an der Straße; kein Stress, Platz ist genug</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Maps</span>
+        <span class="maps-links">
+          <a href="https://www.google.com/maps/search/?api=1&query=Silcherweg+15+Hemsbach" target="_blank" rel="noopener">Google Maps ↗</a>
+          <span class="maps-sep">&nbsp;·&nbsp;</span>
+          <a href="https://maps.apple.com/?q=Silcherweg+15,+69502+Hemsbach&address=Silcherweg+15,+69502+Hemsbach" target="_blank" rel="noopener">Apple Karten ↗</a>
+        </span>
+      </div>
+
+      <p class="card-note">
+        Wir freuen uns auf einen entspannten Nachmittag mit euch. Geplant ist ein gemütliches Beisammensein im Garten, das gegen Abend ausklingt.
+      </p>
+    </div>
+  </div>
+
+  <div class="ornament">◈ ◈ ◈</div>
+</section>
+
+<!-- ═══════════════════ DRESSCODE ═══════════════════ -->
+<section id="dresscode" class="reveal">
+  <span class="hidden-heart" data-note="5" style="top: 15%; right: 5%;">♡</span>
+  <div class="section-label">Was anziehen</div>
+  <h2 class="section-title">Der <em>Dresscode</em></h2>
+
+  <div class="dresscode">
+    <div class="dresscode-name">Casual Chic</div>
+    <p class="dresscode-desc">
+      Fühlt euch wohl, kein steifes Outfit nötig. Etwas schicker als Alltag, aber bitte so, dass ihr euch wohl fühlt.
+    </p>
+
+    <div class="dresscode-tips">
+      <p style="margin-bottom: 1rem;">
+        <strong style="font-style: normal; color: var(--terracotta-deep);">Was wir uns vorstellen:</strong>
+        Für die Männer eine Stoffhose statt Jeans und gerne ein Hemd. Sakko, Anzug oder Krawatte sind <em>nicht</em> nötig. Für die Frauen ein Kleid, ein Rock mit Bluse oder eine schöne Stoffhose mit Oberteil — alles, worin ihr euch wohlfühlt und das festlicher als Alltag ist.
+      </p>
+      <p>
+        <strong style="font-style: normal; color: var(--terracotta-deep);">Bitte verzichtet auf:</strong>
+        Jeans und Sneaker im Sportlook. Auch bei den Farben kleine Bitten: Die Frauen sollten auf <em>Weiß</em> und <em>helles Rosa</em> verzichten, die Männer bitte keinen <em>beigen Anzug</em> oder beige Hose — und für alle gilt: bitte kein <em>Schwarz</em>.
+      </p>
+    </div>
+  </div>
+
+  <div class="ornament">◈ ◈ ◈</div>
+</section>
+
+<!-- ═══════════════════ FOTO-HINWEIS ═══════════════════ -->
+<section id="wichtiges" class="reveal">
+  <span class="hidden-heart" data-note="2" style="top: 35%; left: 5%;">♡</span>
+  <div class="section-label">Gut zu wissen</div>
+  <h2 class="section-title">Ein <em>Hinweis</em></h2>
+
+  <div class="info-grid info-grid-single">
+    <div class="info-block">
+      <div class="info-block-icon">✦</div>
+      <h3>Fotos</h3>
+      <p>
+        Während der Trauung bitten wir euch, <strong>auf Handyfotos zu verzichten</strong> — Sarah übernimmt die Fotografie für uns. Danach beim Grillen freuen wir uns über eure Schnappschüsse und über jedes Bild, das ihr uns im Anschluss zukommen lasst ♡
+      </p>
+    </div>
+  </div>
+
+  <div class="ornament">◈ ◈ ◈</div>
+</section>
+
+<!-- ═══════════════════ RÜCKMELDUNG ═══════════════════ -->
+<section id="rsvp" class="reveal">
+  <div class="section-label">Rückmeldung</div>
+  <h2 class="section-title">Sagt uns <em>Bescheid</em></h2>
+
+  <div class="rsvp">
+    <p class="rsvp-intro">
+      Damit wir gut planen können — vor allem fürs Grillen — würden wir uns freuen, wenn ihr uns kurz Bescheid gebt, ob ihr nach der Trauung dabei seid. <br><br>
+      <strong>Wir kümmern uns ums Essen — ihr müsst nichts beisteuern.</strong> Falls ihr aber Lust habt, einen Salat, ein Dessert oder eine andere Beilage zum Buffet beizutragen: Schreibt es einfach unten rein. Wir melden uns dann bei euch zur Absprache, damit wir am Ende nicht fünf Nudelsalate haben ♡
+    </p>
+
+    <form id="rsvpForm">
+      <!-- Web3Forms Access Key — bei web3forms.com kostenlos holen und HIER eintragen -->
+      <input type="hidden" name="access_key" value="bbe90548-547d-44cd-b0f6-4b141b114b7f">
+      <!-- Empfänger-Mails (Web3Forms unterstützt mehrere Empfänger via Komma) -->
+      <input type="hidden" name="cc" value="rene.marquardt@hotmail.de">
+      <!-- Betreff der Mail, die bei euch ankommt -->
+      <input type="hidden" name="subject" value="Neue Hochzeits-Rückmeldung 💍">
+      <!-- Honeypot gegen Spam-Bots -->
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <!-- Verhindert dass Web3Forms-Default-Erfolgsseite geöffnet wird -->
+      <input type="hidden" name="redirect" value="false">
+
+      <div class="rsvp-field">
+        <label for="rsvp-name">Euer Name</label>
+        <input type="text" id="rsvp-name" name="name" required>
+      </div>
+
+      <div class="rsvp-field">
+        <label>Kommt ihr zum Grillen nach Hemsbach?</label>
+        <div class="rsvp-radio-group">
+          <div class="rsvp-radio">
+            <input type="radio" id="rsvp-yes" name="grillen" value="ja" required>
+            <label for="rsvp-yes">Ja, sehr gerne!</label>
+          </div>
+          <div class="rsvp-radio">
+            <input type="radio" id="rsvp-no" name="grillen" value="nein">
+            <label for="rsvp-no">Leider nicht</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="rsvp-field">
+        <label for="rsvp-personen">Mit wie vielen Personen?</label>
+        <input type="number" id="rsvp-personen" name="personen" min="1" max="10" value="1">
+      </div>
+
+      <div class="rsvp-field">
+        <label for="rsvp-mitbringen">Möchtet ihr etwas zum Buffet beisteuern?</label>
+        <input type="text" id="rsvp-mitbringen" name="mitbringen" placeholder="z.B. Salat, Dessert, eine Beilage... wir sprechen das ab">
+      </div>
+
+      <div class="rsvp-field">
+        <label for="rsvp-message">Sonst noch etwas? (optional)</label>
+        <textarea id="rsvp-message" name="message" placeholder="Allergien, liebe Worte, Fragen..."></textarea>
+      </div>
+
+      <button type="submit" class="rsvp-button">Abschicken</button>
+    </form>
+
+    <div class="rsvp-success" id="rsvpSuccess" style="display: none;">
+      ♡ Vielen Dank! Wir freuen uns auf euch.
+    </div>
+  </div>
+
+  <div class="ornament">◈ ◈ ◈</div>
+</section>
+
+<!-- ═══════════════════ KONTAKT ═══════════════════ -->
+<section id="kontakt" class="reveal">
+  <span class="hidden-heart" data-note="6" style="bottom: 15%; right: 4%;">♡</span>
+  <div class="section-label">Bei Fragen</div>
+  <h2 class="section-title">Eure <em>Kontakte</em></h2>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-role">Braut</div>
+      <div class="contact-name">Sophia</div>
+      <div class="contact-info">
+        <a href="tel:015227529251">015227529251</a><br>
+        <a href="mailto:willesophia@gmail.com">willesophia@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-role">Bräutigam</div>
+      <div class="contact-name">Rene</div>
+      <div class="contact-info">
+        <a href="tel:017672765724">017672765724</a><br>
+        <a href="mailto:rene.marquardt@hotmail.de">rene.marquardt@hotmail.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <p>Wir freuen uns so sehr auf euch <span class="heart">♡</span></p>
+  <p style="margin-top: 0.5rem; font-size: 0.9rem;">Sophia &amp; Rene</p>
+</footer>
+
+<script>
+  // Reveal-on-Scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Smooth scroll für Nav-Links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        const offset = target.offsetTop - 80;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ═══════════ GLITZER AM MAUSZEIGER ═══════════
+  let lastSparkle = 0;
+  const sparkleSymbols = ['✦', '✧', '·', '◈', '✦'];
+
+  document.addEventListener('mousemove', (e) => {
+    const now = Date.now();
+    if (now - lastSparkle < 60) return; // throttle
+    lastSparkle = now;
+
+    const sparkle = document.createElement('div');
+    sparkle.className = 'sparkle';
+
+    // Zufällige Variationen
+    const size = 4 + Math.random() * 8;
+    const offsetX = (Math.random() - 0.5) * 20;
+    const offsetY = (Math.random() - 0.5) * 20;
+
+    sparkle.style.width = size + 'px';
+    sparkle.style.height = size + 'px';
+    sparkle.style.left = (e.clientX + offsetX - size / 2) + 'px';
+    sparkle.style.top = (e.clientY + offsetY - size / 2) + 'px';
+
+    // Zufällige Farb-Variationen aus der Palette
+    const colors = [
+      'radial-gradient(circle, #f4d59e 0%, #e0a96d 40%, transparent 70%)',
+      'radial-gradient(circle, #f5d4c4 0%, #c89890 40%, transparent 70%)',
+      'radial-gradient(circle, #faf2e2 0%, #a88159 40%, transparent 70%)'
+    ];
+    sparkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+    document.body.appendChild(sparkle);
+    setTimeout(() => sparkle.remove(), 1200);
+  });
+
+  // ═══════════ EINTRITTS-KONFETTI ═══════════
+  function createEntrySparkles() {
+    const symbols = ['✦', '✧', '◈', '·', '✦', '♡'];
+    const colors = ['#b8654a', '#a88159', '#c89890', '#7a8268', '#e0a96d'];
+    const count = 30;
+
+    for (let i = 0; i < count; i++) {
+      setTimeout(() => {
+        const s = document.createElement('div');
+        s.className = 'entry-sparkle';
+        s.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        s.style.left = Math.random() * 100 + 'vw';
+        s.style.color = colors[Math.floor(Math.random() * colors.length)];
+        s.style.fontSize = (0.7 + Math.random() * 1.2) + 'rem';
+        s.style.animationDuration = (3 + Math.random() * 3) + 's';
+        s.style.animationDelay = (Math.random() * 0.5) + 's';
+        document.body.appendChild(s);
+        setTimeout(() => s.remove(), 7000);
+      }, i * 80);
+    }
+  }
+
+  // Beim Laden der Seite
+  window.addEventListener('load', () => {
+    setTimeout(createEntrySparkles, 400);
+  });
+
+  // ═══════════ EASTER EGG: Klick auf Datum = Konfetti ═══════════
+  const heroDate = document.querySelector('.hero-date');
+  if (heroDate) {
+    heroDate.addEventListener('click', createEntrySparkles);
+  }
+
+  // ═══════════ HERZ-BURST BEIM KLICK AUF NAMEN ═══════════
+  const heroNames = document.querySelector('.hero-names');
+  if (heroNames) {
+    heroNames.addEventListener('click', (e) => {
+      for (let i = 0; i < 12; i++) {
+        const heart = document.createElement('div');
+        heart.textContent = '♡';
+        heart.style.position = 'fixed';
+        heart.style.left = e.clientX + 'px';
+        heart.style.top = e.clientY + 'px';
+        heart.style.color = ['#b8654a', '#c89890', '#a88159'][Math.floor(Math.random() * 3)];
+        heart.style.fontSize = (1 + Math.random() * 1.5) + 'rem';
+        heart.style.pointerEvents = 'none';
+        heart.style.zIndex = '9999';
+        heart.style.transition = 'all 1.5s cubic-bezier(0.2, 0.8, 0.4, 1)';
+        document.body.appendChild(heart);
+
+        const angle = (Math.PI * 2 * i) / 12;
+        const distance = 80 + Math.random() * 60;
+
+        requestAnimationFrame(() => {
+          heart.style.left = (e.clientX + Math.cos(angle) * distance) + 'px';
+          heart.style.top = (e.clientY + Math.sin(angle) * distance - 40) + 'px';
+          heart.style.opacity = '0';
+          heart.style.transform = 'scale(0.3)';
+        });
+
+        setTimeout(() => heart.remove(), 1600);
+      }
+    });
+    heroNames.style.cursor = 'pointer';
+  }
+
+  // ═══════════ COUNTDOWN ═══════════
+  // 18. Mai 2026 um 14:30 Uhr (Trauung im Standesamt)
+  const weddingDate = new Date(2026, 4, 18, 14, 30);
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = weddingDate - now;
+
+    if (diff <= 0) {
+      document.getElementById('countdown').innerHTML =
+        '<div class="countdown-message">Heute ist es so weit! ♡</div>';
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById('cd-days').textContent = days;
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // ═══════════ SCHWEBENDE BLÜTENBLÄTTER ═══════════
+  function createPetal() {
+    const petals = ['❀', '✿', '❁', '✾'];
+    const petal = document.createElement('div');
+    petal.className = 'petal';
+    petal.textContent = petals[Math.floor(Math.random() * petals.length)];
+    petal.style.left = Math.random() * 100 + 'vw';
+    petal.style.fontSize = (0.7 + Math.random() * 0.8) + 'rem';
+    petal.style.animationDuration = (12 + Math.random() * 10) + 's';
+
+    // Zufällige Farbe aus der Palette
+    const colors = ['var(--rose)', 'var(--terracotta)', 'var(--gold)', 'var(--sage)'];
+    petal.style.color = colors[Math.floor(Math.random() * colors.length)];
+
+    document.body.appendChild(petal);
+    setTimeout(() => petal.remove(), 22000);
+  }
+
+  // Alle paar Sekunden ein neues Blütenblatt
+  setInterval(createPetal, 4000);
+  // Direkt ein paar zum Start
+  for (let i = 0; i < 3; i++) {
+    setTimeout(createPetal, i * 2000);
+  }
+
+  // ═══════════ TAG-/ABENDMODUS ═══════════
+  const modeToggle = document.getElementById('modeToggle');
+  modeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('evening');
+    modeToggle.textContent = document.body.classList.contains('evening') ? '☾' : '☀';
+  });
+
+  // ═══════════ MUSIK-TOGGLE (Hochzeitsmarsch MP3) ═══════════
+  // Erwartet eine Datei "hochzeitsmarsch.mp3" im selben Ordner wie diese HTML.
+  const musicToggle = document.getElementById('musicToggle');
+  const weddingMusic = new Audio('hochzeitsmarsch.mp3');
+  weddingMusic.loop = true;
+  weddingMusic.volume = 0.5;
+  let isPlaying = false;
+  // audioCtx wird auch vom Evening-Mode-Ambient-Sound benutzt
+  let audioCtx = null;
+
+  // Sanftes Ein-/Ausblenden
+  function fadeAudio(audio, targetVolume, duration = 600) {
+    const startVolume = audio.volume;
+    const startTime = performance.now();
+    function step(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      audio.volume = startVolume + (targetVolume - startVolume) * progress;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else if (targetVolume === 0) {
+        audio.pause();
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  musicToggle.addEventListener('click', () => {
+    if (isPlaying) {
+      fadeAudio(weddingMusic, 0);
+      musicToggle.classList.remove('playing');
+      isPlaying = false;
+    } else {
+      weddingMusic.volume = 0;
+      weddingMusic.play().then(() => {
+        fadeAudio(weddingMusic, 0.5);
+        musicToggle.classList.add('playing');
+        isPlaying = true;
+      }).catch(err => {
+        console.error('Audio konnte nicht abgespielt werden:', err);
+        alert('Die Musik-Datei konnte nicht geladen werden. Stellt sicher, dass "hochzeitsmarsch.mp3" im selben Ordner wie die HTML-Datei liegt.');
+      });
+    }
+  });
+
+  weddingMusic.addEventListener('ended', () => {
+    musicToggle.classList.remove('playing');
+    isPlaying = false;
+  });
+
+  // ═══════════ R.S.V.P. FORMULAR ═══════════
+  // ═══════════ RSVP via Web3Forms ═══════════
+  // Mails gehen automatisch ohne dass der Gast etwas sehen oder klicken muss.
+  // Hauptempfänger: willesophia@gmail.com (im Web3Forms-Dashboard hinterlegt)
+  // CC: rene.marquardt@hotmail.de (im Hidden-Field oben gesetzt)
+
+  const rsvpForm = document.getElementById('rsvpForm');
+  if (rsvpForm) {
+    rsvpForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Frühe Warnung wenn Access Key noch nicht eingetragen wurde
+      const accessKey = rsvpForm.querySelector('input[name="access_key"]').value;
+      if (accessKey === 'DEIN_WEB3FORMS_ACCESS_KEY_HIER' || !accessKey) {
+        alert('Achtung: Der Web3Forms Access Key wurde noch nicht im HTML-Code eingetragen. Bitte holt euch einen Key auf web3forms.com und tragt ihn ein.');
+        return;
+      }
+
+      const submitBtn = rsvpForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Wird gesendet...';
+      submitBtn.disabled = true;
+
+      try {
+        const formData = new FormData(rsvpForm);
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+        const result = await response.json();
+
+        if (result.success) {
+          rsvpForm.style.display = 'none';
+          document.getElementById('rsvpSuccess').style.display = 'block';
+          if (typeof createEntrySparkles === 'function') {
+            createEntrySparkles();
+          }
+        } else {
+          throw new Error(result.message || 'Unbekannter Fehler');
+        }
+      } catch (err) {
+        console.error('RSVP-Fehler:', err);
+        alert('Beim Senden ist leider etwas schiefgelaufen. Bitte versucht es nochmal oder schreibt uns direkt eine Mail.');
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
+  // ═══════════ PARALLAX HERO ═══════════
+  const heroBg = document.getElementById('heroBg');
+  if (heroBg) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      if (scrolled < window.innerHeight) {
+        heroBg.style.transform = `translateY(${scrolled * 0.4}px)`;
+      }
+    }, { passive: true });
+  }
+
+  // ═══════════ ANIMIERTE ORNAMENTE BEIM SCROLLEN ═══════════
+  const ornamentObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('drawn');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.ornament').forEach(el => ornamentObserver.observe(el));
+
+  // ═══════════ SAVE-THE-DATE: .ICS DATEI GENERIEREN ═══════════
+  const saveDateBtn = document.getElementById('saveDateBtn');
+  if (saveDateBtn) {
+    saveDateBtn.addEventListener('click', () => {
+      const icsContent = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Sophia und Rene//Hochzeit//DE',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH',
+        'BEGIN:VEVENT',
+        'UID:hochzeit-sophia-rene-2026@sophia-rene.de',
+        'DTSTAMP:20260518T120000Z',
+        'DTSTART:20260518T120000Z',
+        'DTEND:20260518T170000Z',
+        'SUMMARY:Hochzeit Sophia & Rene 💍',
+        'DESCRIPTION:Trauung um 14:30 Uhr im Standesamt Mannheim\\, danach gemeinsames Grillen in Hemsbach. Wir freuen uns auf euch! ♡',
+        'LOCATION:Standesamt Mannheim\\, K7 2\\, 68159 Mannheim',
+        'STATUS:CONFIRMED',
+        'BEGIN:VALARM',
+        'TRIGGER:-P1D',
+        'ACTION:DISPLAY',
+        'DESCRIPTION:Morgen ist Sophia und Renes Hochzeit!',
+        'END:VALARM',
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\r\n');
+
+      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Hochzeit-Sophia-und-Rene.ics';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    });
+  }
+
+  // ═══════════ LIVE WETTER (Open-Meteo, kein API-Key nötig) ═══════════
+  // Open-Meteo liefert bis zu 16 Tage Vorhersage. Wir zeigen das Widget ab 16 Tagen vorher.
+  // Hinweis: 16-7 Tage vorher ist die Vorhersage noch grob, ab ca. 7 Tagen wird sie zuverlässiger.
+  const daysUntilWedding = Math.floor((weddingDate - new Date()) / (1000 * 60 * 60 * 24));
+  if (daysUntilWedding >= 0 && daysUntilWedding <= 16) {
+    const widget = document.getElementById('weatherWidget');
+    const tempEl = document.getElementById('weatherTemp');
+    const iconEl = document.getElementById('weatherIcon');
+    const descEl = document.getElementById('weatherDesc');
+
+    // Mannheim Koordinaten
+    const lat = 49.4875;
+    const lon = 8.466;
+    // Datum dynamisch im Format YYYY-MM-DD
+    const yyyy = weddingDate.getFullYear();
+    const mm = String(weddingDate.getMonth() + 1).padStart(2, '0');
+    const dd = String(weddingDate.getDate()).padStart(2, '0');
+    const dateStr = `${yyyy}-${mm}-${dd}`;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Europe%2FBerlin&start_date=${dateStr}&end_date=${dateStr}`;
+
+    fetch(url)
+      .then(r => r.json())
+      .then(data => {
+        if (!data.daily || !data.daily.temperature_2m_max[0]) {
+          console.warn('Wetter-API: keine Daten verfügbar', data);
+          return;
+        }
+        const maxT = Math.round(data.daily.temperature_2m_max[0]);
+        const minT = Math.round(data.daily.temperature_2m_min[0]);
+        const code = data.daily.weathercode[0];
+
+        const weatherMap = {
+          0: { icon: '☀️', desc: 'Klarer Himmel' },
+          1: { icon: '🌤️', desc: 'Überwiegend sonnig' },
+          2: { icon: '⛅', desc: 'Teilweise bewölkt' },
+          3: { icon: '☁️', desc: 'Bedeckt' },
+          45: { icon: '🌫️', desc: 'Nebel' },
+          48: { icon: '🌫️', desc: 'Reifnebel' },
+          51: { icon: '🌦️', desc: 'Leichter Nieselregen' },
+          53: { icon: '🌦️', desc: 'Nieselregen' },
+          55: { icon: '🌧️', desc: 'Starker Nieselregen' },
+          61: { icon: '🌦️', desc: 'Leichter Regen' },
+          63: { icon: '🌧️', desc: 'Regen' },
+          65: { icon: '🌧️', desc: 'Starker Regen' },
+          80: { icon: '🌦️', desc: 'Regenschauer' },
+          81: { icon: '🌧️', desc: 'Schauer' },
+          95: { icon: '⛈️', desc: 'Gewitter' }
+        };
+
+        const w = weatherMap[code] || { icon: '🌤️', desc: 'Wechselhaft' };
+        iconEl.textContent = w.icon;
+        tempEl.textContent = `${maxT}°`;
+
+        // Hinweis je nach Vorhersage-Genauigkeit
+        let suffix = '';
+        if (daysUntilWedding > 7) {
+          suffix = ' · Vorhersage wird genauer';
+        }
+        descEl.textContent = `${w.desc} · Tief ${minT}° / Hoch ${maxT}°${suffix}`;
+        widget.classList.add('visible');
+      })
+      .catch((err) => {
+        console.warn('Wetter konnte nicht geladen werden:', err);
+        // Bei Fehler: Widget einfach nicht zeigen
+      });
+  }
+
+  // ═══════════ VERSTECKTE LIEBESBRIEFE ═══════════
+  const loveNotes = {
+    1: { title: 'Hallo!', text: 'Schön, dass du dir die Zeit nimmst, hier rumzustöbern. Kleiner Tipp: Klick mal oben auf unsere Namen — da passiert was.' },
+    2: { title: 'Übrigens', text: 'Falls dir die Seite gefällt: Sophia hat sich da ordentlich Mühe gegeben. Rene hat... moralisch unterstützt.' },
+    3: { title: 'Trauzeugen-Drama', text: 'Unsere Katzen wollten unbedingt Trauzeugen sein. Leider sind sie im Standesamt nicht erwünscht. Sie haben sich noch nicht ganz davon erholt.' },
+    4: { title: 'Ehrlich gesagt', text: 'Den 18. Mai haben wir gewählt, weil... naja, weil das Standesamt da frei hatte. So romantisch ist das manchmal.' },
+    5: { title: 'Falls ihr euch fragt', text: 'Es ist eine kleine Runde. Wenn ihr die Einladung bekommen habt, seid ihr uns wirklich wichtig.' },
+    6: { title: 'Du hast alle gefunden!', text: 'Sechs Herzen, sechs kleine Notizen. Hut ab — und danke fürs Stöbern. Wir sehen uns am 18. Mai.' }
+  };
+
+  document.querySelectorAll('.hidden-heart').forEach(heart => {
+    heart.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const noteId = heart.dataset.note;
+      const note = loveNotes[noteId];
+      if (note) {
+        document.getElementById('loveNoteTitle').textContent = note.title;
+        document.getElementById('loveNoteText').textContent = note.text;
+        document.getElementById('loveNoteModal').classList.add('open');
+        heart.classList.add('revealed');
+      }
+    });
+  });
+
+  document.getElementById('loveNoteModal').addEventListener('click', (e) => {
+    if (e.target.id === 'loveNoteModal') {
+      e.currentTarget.classList.remove('open');
+    }
+  });
+
+  // ═══════════ BLÄTTER-RAUSCHEN IM EVENING-MODE ═══════════
+  let ambientNoise = null;
+  let ambientGain = null;
+
+  function startAmbient() {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+
+    // White Noise gefiltert = sanftes Rauschen
+    const bufferSize = 2 * audioCtx.sampleRate;
+    const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const output = noiseBuffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) {
+      output[i] = (Math.random() * 2 - 1) * 0.3;
+    }
+
+    ambientNoise = audioCtx.createBufferSource();
+    ambientNoise.buffer = noiseBuffer;
+    ambientNoise.loop = true;
+
+    // Tiefpassfilter für sanften, blätterartigen Klang
+    const filter = audioCtx.createBiquadFilter();
+    filter.type = 'bandpass';
+    filter.frequency.value = 800;
+    filter.Q.value = 0.5;
+
+    ambientGain = audioCtx.createGain();
+    ambientGain.gain.value = 0;
+
+    ambientNoise.connect(filter);
+    filter.connect(ambientGain);
+    ambientGain.connect(audioCtx.destination);
+
+    ambientNoise.start(0);
+    ambientGain.gain.linearRampToValueAtTime(0.04, audioCtx.currentTime + 1.5);
+  }
+
+  function stopAmbient() {
+    if (ambientGain && audioCtx) {
+      ambientGain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 1);
+      setTimeout(() => {
+        if (ambientNoise) {
+          ambientNoise.stop();
+          ambientNoise = null;
+        }
+      }, 1100);
+    }
+  }
+
+  // Beim Wechsel in den Evening-Mode Ambient starten
+  const originalModeToggleClick = modeToggle.onclick;
+  modeToggle.addEventListener('click', () => {
+    if (document.body.classList.contains('evening')) {
+      // Just switched TO evening
+      try { startAmbient(); } catch(e) {}
+    } else {
+      stopAmbient();
+    }
+  });
+
+  // ═══════════ CURSOR-TRAIL: BLÜTENBLÄTTER STATT NUR SPARKLES ═══════════
+  // Ersetzt die alte Sparkle-Logik durch Blütenblätter
+  // (alte mousemove-Listener bleiben, aber jetzt mit Blütenblättern als Variation)
+  let lastPetal = 0;
+  const trailPetals = ['❀', '✿', '❁', '❀', '✦'];
+
+  document.addEventListener('mousemove', (e) => {
+    const now = Date.now();
+    if (now - lastPetal < 180) return;
+    lastPetal = now;
+
+    const petal = document.createElement('div');
+    petal.textContent = trailPetals[Math.floor(Math.random() * trailPetals.length)];
+    petal.style.position = 'fixed';
+    petal.style.left = (e.clientX + (Math.random() - 0.5) * 30) + 'px';
+    petal.style.top = (e.clientY + (Math.random() - 0.5) * 10) + 'px';
+    petal.style.fontSize = (0.7 + Math.random() * 0.6) + 'rem';
+    petal.style.color = ['var(--rose)', 'var(--terracotta)', 'var(--gold)'][Math.floor(Math.random() * 3)];
+    petal.style.pointerEvents = 'none';
+    petal.style.zIndex = '9998';
+    petal.style.opacity = '0.7';
+    petal.style.transition = 'all 1.8s cubic-bezier(0.2, 0.8, 0.4, 1)';
+    petal.style.transform = `rotate(${Math.random() * 360}deg)`;
+    document.body.appendChild(petal);
+
+    requestAnimationFrame(() => {
+      petal.style.top = (e.clientY + 60 + Math.random() * 30) + 'px';
+      petal.style.left = (parseFloat(petal.style.left) + (Math.random() - 0.5) * 60) + 'px';
+      petal.style.opacity = '0';
+      petal.style.transform = `rotate(${Math.random() * 540}deg)`;
+    });
+
+    setTimeout(() => petal.remove(), 1900);
+  });
+</script>
+
+</body>
+</html>
